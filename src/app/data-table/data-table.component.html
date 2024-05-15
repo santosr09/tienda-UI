@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Description</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    @for (item of data; track item.id) {
+      <td>{{ item.id }}</td>
+      <td>{{ item.descripcion }}</td>
+      <td>{{ item.status }}</td>
+    }
+  </tr>
+</table>
